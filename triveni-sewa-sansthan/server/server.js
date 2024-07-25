@@ -10,8 +10,8 @@ const port = process.env.PORT || 5000;
 app.use(bodyParser.json());
 
 // Setup Twilio
-const accountSid = 'your_twilio_account_sid'; // Your Account SID from www.twilio.com/console
-const authToken = 'your_twilio_auth_token';   // Your Auth Token from www.twilio.com/console
+const accountSid = 'AC9bfab0c39509645a3b830a15871f6081'; // Your Account SID from www.twilio.com/console
+const authToken = 'd3e297bcfb06ffb78f303f64825804ea';   // Your Auth Token from www.twilio.com/console
 const client = new twilio(accountSid, authToken);
 
 app.post('/api/contact', (req, res) => {
